@@ -69,15 +69,15 @@
             </objects>
             <point key="canvasLocation" x="1046.376811594203" y="138.58695652173915"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="BvF-95-Cpk">
             <objects>
-                <viewController id="KAG-Rq-uvk" sceneMemberID="viewController">
+                <viewController id="KAG-Rq-uvk" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IRo-o4-4Qd"/>
                         <viewControllerLayoutGuide type="bottom" id="6So-xM-M2w"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="a9Z-bB-gd6">
+                    <view key="view" contentMode="scaleToFill" id="a9Z-bB-gd6" customClass="Pla">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
