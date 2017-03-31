@@ -44,7 +44,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-bq-GNx">
                                 <rect key="frame" x="154" y="454" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PITCH-TWEAKER" translatesAutoresizingMaskIntoConstraints="NO" id="K6t-7D-VL2">
@@ -55,7 +55,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="K6t-7D-VL2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="6zX-GB-ghd"/>
                             <constraint firstItem="nTP-BB-Lcv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8fu-Cx-pmE"/>
@@ -108,7 +108,7 @@
                                                             <action selector="playSoundForButton:" destination="KAG-Rq-uvk" eventType="touchUpInside" id="Oux-De-xef"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-Zc-6nR" userLabel="FastButton">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-Zc-6nR" userLabel="FastButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="Fast"/>
                                                         <connections>
@@ -120,14 +120,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n4d-hW-hkb">
                                                 <rect key="frame" x="0.0" y="196" width="374" height="196"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE0-hh-vcT" userLabel="HighPitchButton">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE0-hh-vcT" userLabel="HighPitchButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="HighPitch"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="KAG-Rq-uvk" eventType="touchUpInside" id="hx1-lf-IWf"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXD-EX-JRS" userLabel="LowPitchButton">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXD-EX-JRS" userLabel="LowPitchButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="LowPitch"/>
                                                         <connections>
@@ -139,14 +139,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Naz-c4-BOr">
                                                 <rect key="frame" x="0.0" y="392" width="374" height="196"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-a8-yEp" userLabel="EchoButton">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-a8-yEp" userLabel="EchoButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="Echo"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="KAG-Rq-uvk" eventType="touchUpInside" id="teF-dp-iTo"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFX-DY-PQo" userLabel="ReverbButton">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFX-DY-PQo" userLabel="ReverbButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="Reverb"/>
                                                         <connections>
@@ -178,7 +178,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ayf-mx-aNN" firstAttribute="leading" secondItem="a9Z-bB-gd6" secondAttribute="leadingMargin" id="8SL-TH-zNv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ayf-mx-aNN" secondAttribute="trailing" id="MHh-3s-sei"/>
